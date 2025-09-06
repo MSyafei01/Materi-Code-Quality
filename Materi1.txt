@@ -35,3 +35,13 @@ true
 
 
 JSDoc, Alat Dokumentasi Kode
+JSDoc adalah sebuah alat untuk menghasilkan dokumentasi kode JavaScript. 
+    Untuk memberikan deskripsi, kita akan memanfaatkan fitur komentar langsung pada sumber kodenya. 
+    Lebih tepatnya, komentar disajikan sebelum kode itu sendiri. Komentar ini sebut saja JSDoc comment.
+
+
+Flow, Type Check Library
+Flow adalah sebuah library (terjemahan dalam bahasa Indonesia: pustaka) yang dapat menambahkan pemeriksaan type 
+    untuk kode JavaScript. Library ini seakan-akan dapat menambahkan type check layer (lapisan pemeriksaan tipe) 
+    sebelum dieksekusi mesin.
+
