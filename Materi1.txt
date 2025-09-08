@@ -45,3 +45,44 @@ Flow adalah sebuah library (terjemahan dalam bahasa Indonesia: pustaka) yang dap
     untuk kode JavaScript. Library ini seakan-akan dapat menambahkan type check layer (lapisan pemeriksaan tipe) 
     sebelum dieksekusi mesin.
 
+Code Convention dengan Linter Library
+Ada beberapa library yang dapat menunjang kualitas kode kita, yaitu ESLint, StandardJS, dan JSHint. 
+    Para linter ini akan memberikan feedback setelah berhasil menganalisis kode Anda jika terdeteksi 
+    inkonsistensi pada penulisannya. 
+
+Ada tiga kategori yang tersedia pada setiap rule-nya berdasarkan tingkat keparahan.
+
+“off” atau 0: aturan tersebut tidak dipermasalahkan atau dimatikan.
+“warn” atau 1: aturan ditetapkan sebagai peringatan saja saat dilanggar.
+“error” atau 2: aturan wajib dipatuhi dan program dapat mengalami error.
+
+
+Testing dalam Node.js
+Pengujian pada Node.js membutuhkan dua buah module, yaitu node:test dan node:assert. 
+node:test berperan sebagai test runner yang menawarkan API untuk menuliskan skenario pengujian. 
+
+Susun Pengaman dengan Testing
+Mari kita contohkan langsung dengan kasus sederhana. Kita memiliki satu function yang perlu diuji ketepatan dan 
+    kekuatannya. 
+
+
+
+Function itu adalah add. Ia adalah salah satu fungsi kalkulator dan membutuhkan dua parameter yang akan diproses 
+    dengan operasi penjumlahan.
+
+export function add(numA, numB) {
+  return numA + numB;
+}
+
+Function add dapat mengoperasikan penjumlahan aritmetika dengan baik.
+Function add membangkitkan error jika nilai argumen dari numA tidak bertipe number.
+Function add membangkitkan error jika nilai argumen dari numB tidak bertipe number.
+
+Aliases
+Sebagian developer lebih menyukai it daripada test ketika mendefinisikan test case. 
+    Keduanya memiliki tujuan yang identik. Dengan it, pembacaan kasus pengujian menjadi lebih gampang.
+
+it('should add correctly') ⇒ itu harus ditambahkan dengan benar.
+
+
+
