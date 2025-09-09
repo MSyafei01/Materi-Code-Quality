@@ -86,3 +86,55 @@ it('should add correctly') ⇒ itu harus ditambahkan dengan benar.
 
 
 
+------------------
+
+
+🔑 Kesimpulan Code Quality
+
+Type System & Type Safety
+
+JavaScript itu dynamic & weakly-typed, sehingga rawan bug.
+
+Solusinya:
+
+Tambahkan JSDoc → dokumentasi + hint tipe data.
+
+Gunakan Flow atau TypeScript → memberikan static type checking sebelum runtime.
+
+👉 Tujuan: mencegah bug yang muncul karena kesalahan tipe data.
+
+Style Guide & Code Convention
+
+Menulis kode bukan hanya tentang "jalan atau tidak", tapi juga rapi, konsisten, mudah dibaca & dikerjakan tim.
+
+Solusi:
+
+Terapkan style guide (aturan penulisan kode).
+
+Gunakan ESLint untuk memberi feedback otomatis saat gaya penulisan salah.
+
+👉 Tujuan: memudahkan kolaborasi & menjaga kualitas kode jangka panjang.
+
+Testing (Pengujian Program)
+
+Testing itu bagian penting dari code quality karena memastikan program berjalan sesuai ekspektasi.
+
+Ada 2 jenis:
+
+Manual testing → jalankan program & cek output.
+
+Automated testing (disarankan) → gunakan node:test, bun:test, jest, dsb.
+
+Prinsip AAA (Arrange, Act, Assert) dipakai agar pengujian lebih terstruktur.
+
+👉 Tujuan: meminimalisir bug & error sejak dini sebelum program dipakai user.
+
+🎯 Jadi kesimpulan akhirnya:
+
+Code Quality bukan hanya soal testing saja, tapi kombinasi dari:
+
+menjaga kebenaran tipe data (type system),
+
+menulis kode dengan konsisten & rapi (style guide + linter),
+
+serta memastikan kode benar-benar berfungsi sesuai ekspektasi (testing).
